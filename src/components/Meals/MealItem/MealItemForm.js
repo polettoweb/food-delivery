@@ -1,9 +1,9 @@
 import Input from "../../UI/Input";
 import classes from "./MealItemForm.module.scss";
 
-const MealItemForm = () => {
+const MealItemForm = props => {
   const inputProps = {
-    id: "amount",
+    id: "amount_" + props.id,
     type: "number",
     min: "1",
     max: "5",
